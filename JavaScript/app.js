@@ -40,6 +40,88 @@ const mobileBtn = document.getElementById('mobile-cta')
 
 
 
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline();
+    
+     
+      tl.from('.stagger1',{
+        opacity: 0,
+        y :-50,
+        stagger:.3,
+        duration: 2
+    
+      })
+    
+      tl.from('.hero-design', {
+        opacity:0,
+        y: 50,
+        ease: Power4.easeOut,
+        duration:1
+      
+      })
+    
+      gsap.from(".transition3",{
+        scrollTrigger:{
+          trigger:".transition3",
+          start:"top center"
+        },
+        y:75,
+        opacity: 0,
+        duration: 2,
+        stagger: .6
+      });
+    
+      gsap.from(".transition2",{
+        scrollTrigger:{
+          trigger:".transition2",
+          start:"top center"
+        },
+        y:75,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .6
+      });
+    
+      gsap.from(".transition1",{
+        scrollTrigger:{
+          trigger:".transition1",
+          start:"top center"
+        },
+        y:75,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .6
+      });
+    
+    
+      gsap.from(".ptrans",{
+        scrollTrigger:{
+          trigger:".ptrans",
+          start:"top center"
+        },
+        y:75,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .6
+      });
+    
+      gsap.from(".stacktrans",{
+        scrollTrigger:{
+          trigger:".stacktrans",
+          start:"top center"
+        },
+        y:75,
+        opacity: 0,
+        duration: 1.2,
+        stagger: .6
+      });
+    
+      
+    
+      
+
+
+
 
 
   // Your web app's Firebase configuration
